@@ -1,5 +1,5 @@
 $slide = 80
-$split = 10
+$split = 9
 
 def setup
   createCanvas($slide * $split, $slide * $split)
@@ -12,7 +12,11 @@ def draw
   
   x = 0
   while x < width
-    triangle(x, $slide, x + $slide / 2, 0, x + $slide, $slide)
+    y = 0
+    while y < height
+      triangle(x, y + $slide, x + $slide / 2, y, x + $slide, y + $slide)
+      y += $slide
+    end
     x += $slide
   end
 end
