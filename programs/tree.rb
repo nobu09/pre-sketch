@@ -1,8 +1,9 @@
-$slide = 80
-$split = 9
-
 def setup
-  createCanvas($slide * $split, $slide * $split)
+  $xSlide = 80
+  $ySlide = Math::sqrt(($xSlide)**2 - ($xSlide / 2)**2)
+  $split = 9
+  
+  createCanvas($xSlide * $split, $ySlide * $split)
 end
 
 def draw
@@ -16,13 +17,13 @@ def draw
     index = 0
     while y < height
       if index.even?
-        triangle(x, y + $slide, x + $slide / 2, y, x + $slide, y + $slide)
+        triangle(x, y + $ySlide, x + $xSlide / 2, y, x + $xSlide, y + $ySlide)
       else
-        triangle(x, y, x + $slide, y, x + $slide / 2, y + $slide)
+        triangle(x, y, x + $xSlide, y, x + $xSlide / 2, y + $ySlide)
       end
-      y += $slide
+      y += $ySlide
       index += 1
     end
-    x += $slide
+    x += $xSlide
   end
 end
