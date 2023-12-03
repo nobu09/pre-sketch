@@ -13,15 +13,15 @@ def draw
   x = 0
   while x < width
     y = 0
-    loop_index = 1
+    index = 0
     while y < height
-      if loop_index.even?
+      if index.even?
         triangle(x, y + $slide, x + $slide / 2, y, x + $slide, y + $slide)
       else
         triangle(x, y, x + $slide, y, x + $slide / 2, y + $slide)
       end
       y += $slide
-      loop_index += 1
+      index += 1
     end
     x += $slide
   end
