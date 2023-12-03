@@ -8,5 +8,5 @@ def draw
   noLoop
   noStroke
   fill('#000000')
-  triangle(0, 0, $maxSize, 0, $maxSize, $maxSize)
+  triangle(0, $maxSize, $maxSize / 2, 0, $maxSize, $maxSize)
 end
