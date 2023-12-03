@@ -10,6 +10,9 @@ def draw
   noStroke
   fill('#000000')
   
-  triangle(0, $slide, $slide / 2, 0, $slide, $slide)
-  triangle($slide, $slide, $slide + $slide / 2, 0, $slide + $slide, $slide)
+  x = 0
+  while x < width
+    triangle(x, $slide, x + $slide / 2, 0, x + $slide, $slide)
+    x += $slide
+  end
 end
