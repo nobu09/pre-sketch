@@ -9,5 +9,7 @@ def draw
   noLoop
   noStroke
   fill('#000000')
+  
   triangle(0, $slide, $slide / 2, 0, $slide, $slide)
+  triangle($slide, $slide, $slide + $slide / 2, 0, $slide + $slide, $slide)
 end
