@@ -11,10 +11,14 @@ def draw
   noStroke
   
   x = 0
+  y = 0
+
   for xIndex in 0..width
     y = 0
-    fill("green")
     
+    color = (xIndex == 4) ? "green" : "white"
+    fill(color)
+
     for yIndex in 0..height
       if yIndex.even?
         triangle(x, y + $ySlide, x + $xSlide / 2, y, x + $xSlide, y + $ySlide)
