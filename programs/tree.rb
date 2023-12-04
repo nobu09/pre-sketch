@@ -13,7 +13,7 @@ def draw
   x = 0
   for xIndex in 0..width
     y = 0
-    fill("black")
+    fill("green")
     
     for yIndex in 0..height
       if yIndex.even?
