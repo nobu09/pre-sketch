@@ -16,7 +16,7 @@ def draw
   for xIndex in 0..width
     y = 0
     
-    color = (xIndex == 4) ? "green" : "white"
+    color = xIndex.even? ? "green" : "red"
     fill(color)
 
     for yIndex in 0..height
