@@ -9,7 +9,11 @@ end
 def draw
   noLoop
   noStroke
-
+  
   fill("green")
+  
   triangle($xSlide * 4.5, $ySlide * 0, $xSlide * 4, $ySlide * 1, $xSlide * 5, $ySlide * 1)
+
+  triangle($xSlide * 4, $ySlide * 1, $xSlide * 3.5, $ySlide * 2, $xSlide * 4.5, $ySlide * 2)
+  triangle($xSlide * 5, $ySlide * 1, $xSlide * 4.5, $ySlide * 2, $xSlide * 5.5, $ySlide * 2)
 end
