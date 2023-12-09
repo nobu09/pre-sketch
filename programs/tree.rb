@@ -9,24 +9,7 @@ end
 def draw
   noLoop
   noStroke
-  
-  x = 0
-  y = 0
 
-  for xIndex in 0..width
-    y = 0
-    
-    color = xIndex.even? ? "green" : "red"
-    fill(color)
-
-    for yIndex in 0..height
-      if yIndex.even?
-        triangle(x, y + $ySlide, x + $xSlide / 2, y, x + $xSlide, y + $ySlide)
-      else
-        triangle(x, y, x + $xSlide, y, x + $xSlide / 2, y + $ySlide)
-      end
-      y += $ySlide
-    end
-    x += $xSlide
-  end
+  fill("green")
+  triangle($xSlide * 4.5, $ySlide * 0, $xSlide * 4, $ySlide * 1, $xSlide * 5, $ySlide * 1)
 end
