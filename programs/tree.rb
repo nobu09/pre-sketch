@@ -2,6 +2,7 @@ def setup
   $xSlide = 10
   $ySlide = 10
   $split = 60
+  $colors = ["green", "mediumaquamarine", "lightgreen", "turquoise", "limegreen"]
   
   createCanvas($xSlide * $split, $ySlide * $split)
 end
@@ -21,6 +22,7 @@ def draw
     xAdjust = 0
 
     for xCount in 0..yIndex
+      fill($colors[rand(0..$colors.length-1)])
       triangle($xSlide * (xIndex + xAdjust), $ySlide * yIndex, $xSlide * (xIndex + xAdjust - 0.5), $ySlide * (yIndex + 1), $xSlide * (xIndex + xAdjust + 0.5), $ySlide * (yIndex + 1))
       xAdjust += 1
     end
@@ -39,6 +41,7 @@ def draw
     xAdjust = 0
 
     for xCount in 0...yIndex
+      fill($colors[rand(0..$colors.length-1)])
       triangle($xSlide * (xIndex + xAdjust), $ySlide * yIndex, $xSlide * (xIndex + xAdjust ++ 0.5), $ySlide * (yIndex + 1), $xSlide *(xIndex + xAdjust + 1), $ySlide * yIndex)
       xAdjust += 1
     end
