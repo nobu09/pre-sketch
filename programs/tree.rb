@@ -12,8 +12,11 @@ def draw
   
   fill("green")
   
-  triangle($xSlide * 4.5, $ySlide * 0, $xSlide * 4, $ySlide * 1, $xSlide * 5, $ySlide * 1)
-
-  triangle($xSlide * 4, $ySlide * 1, $xSlide * 3.5, $ySlide * 2, $xSlide * 4.5, $ySlide * 2)
-  triangle($xSlide * 5, $ySlide * 1, $xSlide * 4.5, $ySlide * 2, $xSlide * 5.5, $ySlide * 2)
+  for i in [0...1]
+    triangle(
+      $xSlide * xIndex, $ySlide * yIndex,
+      $xSlide * (xIndex - 0.5), $ySlide * (yIndex + 1),
+      $xSlide * (xIndex + 0.5), $ySlide * (yIndex + 1)
+    )
+  end
 end
