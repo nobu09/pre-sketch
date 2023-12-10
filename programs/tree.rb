@@ -5,6 +5,7 @@ def setup
   $colors = ["green", "mediumaquamarine", "lightgreen", "turquoise", "limegreen"]
   
   createCanvas($xSlide * $split, $ySlide * $split)
+  background("black")
 end
 
 def draw
