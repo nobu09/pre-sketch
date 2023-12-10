@@ -13,7 +13,7 @@ def draw
   fill("green")
 
   # スタートの座標位置
-  xIndex = 4.5
+  xIndex = $split / 2
   yIndex = 0
 
   for yIndex in 0..$split
