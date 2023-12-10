@@ -1,7 +1,7 @@
 def setup
-  $xSlide = 80
-  $ySlide = 80
-  $split = 9
+  $xSlide = 10
+  $ySlide = 10
+  $split = 60
   
   createCanvas($xSlide * $split, $ySlide * $split)
 end
