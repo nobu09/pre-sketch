@@ -1,6 +1,6 @@
 def setup
   $xSlide = 80
-  $ySlide = (Math::sqrt(($xSlide)**2 - ($xSlide / 2)**2)).ceil
+  $ySlide = 80
   $split = 9
   
   createCanvas($xSlide * $split, $ySlide * $split)
