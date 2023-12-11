@@ -5,15 +5,13 @@ def setup
   $colors = ["green", "mediumaquamarine", "lightgreen", "turquoise", "limegreen"]
   
   createCanvas($xSlide * $split, $ySlide * $split)
-  background("black")
+  background("#223A70")
 end
 
 def draw
   noLoop
   noStroke
   
-  fill("green")
-
   # スタートの座標位置
   xIndex = $split / 2
   yIndex = 0
@@ -31,8 +29,6 @@ def draw
     xIndex -= 0.5
     yIndex += 1
   end
-
-  fill("mediumseagreen")
 
   # 逆三角形を描いていく
   xIndex = $split / 2 - 0.5
