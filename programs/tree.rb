@@ -46,4 +46,10 @@ def draw
     xIndex -= 0.5
     yIndex += 1
   end
+
+  fill("white")
+  textFont('Courier New')
+  textSize(32)
+  text("Merry", 40, 50)
+  text("Christmas", 40, 100)
 end
