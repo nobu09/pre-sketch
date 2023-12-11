@@ -49,7 +49,9 @@ def draw
 
   fill("white")
   textFont('Courier New')
-  textSize(32)
-  text("Merry", 40, 50)
-  text("Christmas", 40, 100)
+  textSize($xSlide * 3)
+  text("Merry", $xSlide * 3, $ySlide * 5)
+  text("Christmas", $xSlide * 3, $ySlide * 10)
+  textSize($xSlide * 2.5)
+  text("2023.12.15", width / 1.6, height - 50)
 end
